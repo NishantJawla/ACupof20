@@ -26,6 +26,106 @@
   .section{
     padding:20px 0;
   }
+  /* Navbar */
+  nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+  z-index: 10;
+}
+nav .content .mainMenu {
+   
+    display: flex;
+    list-style: none;
+    z-index: 5;
+}
+nav .content .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 5;
+}
+nav .content .mainMenu li a:hover {
+    background: #1DB954; 
+    z-index: 5;
+}
+.green{
+  background-color: #1DB954;
+}
+.green:hover{
+  background-color: #228a47;
+}
+nav .content .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 5;
+}
+nav .content .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    z-index: 5;
+}
+.fa-facebook:hover {color: #1DB954;}
+.fa-twitter:hover {color:#1DB954;}
+.fa-instagram:hover {color: #1DB954;}
+.fa-github:hover {color:#1DB954;}
+.fa-envelope-o:hover {color: #1DB954;}
+.openMenu:hover {
+  color: #1DB954;
+}
+.closeMenu:hover{
+  color: #1DB954;
+}
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 5;
+}
+@media(max-width: 800px){
+    nav .content .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .content .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .content .openMenu {
+        display: block;
+    }
+    nav .content .mainMenu li a:hover {
+        background: none;
+        color: #1DB954;
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
   /* Header */
   .v-header{
     height:100vh;
@@ -78,6 +178,11 @@
     font-size:1.2rem;
     padding: 1rem 2rem;
     text-decoration: none;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background:#228a47;
+    color:#fff;
   }
   /* -------------------------- */
   
