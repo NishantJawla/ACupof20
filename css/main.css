@@ -191,7 +191,22 @@ nav .logo {
     background:#333;
     color:#fff;
   }
-
+ /*-----------------post--------*/
+ .post__heading 
+{
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+ .post{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-bottom: 3em;
+  }
+  .post img{
+    width: 30%;
+  }
   /*-------Footer */
   footer ul {
     list-style-type: none;
