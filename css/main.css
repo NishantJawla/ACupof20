@@ -207,6 +207,17 @@ nav .logo {
   .post img{
     width: 30%;
   }
+  /*-----------insta -----------*/
+  .instapost{
+      display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-bottom: 3em;
+  }
+  .instapost img {
+    width: 25%;
+  }
   /*-------Footer */
   footer ul {
     list-style-type: none;
