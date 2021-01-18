@@ -227,7 +227,13 @@ nav .logo {
 footer ul li{
   margin: 6px;
 }
-
+.footer-list{
+  text-decoration: underline;
+}
+.footer-list li:hover{
+   cursor: pointer;
+   opacity: 0.8;
+}
   @media(max-width:960px){
     .container{
       padding-right:3rem;
